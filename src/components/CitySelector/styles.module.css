@@ -1,0 +1,19 @@
+.divSelect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.selectCity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dcd9fc;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+.selectCity {
+    font-size: 20px;
+}

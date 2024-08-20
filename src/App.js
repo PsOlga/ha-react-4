@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import SitySelector from './components/CitySelector/citySelector';
+import CityCard from './components/CityCards';
 import './App.css';
+import { useState } from 'react';
+
 
 function App() {
+  const [dataCity, setDataCity] = useState("");
+
+function updateCity (newCity) {
+ setDataCity(newCity)
+}
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="divApp">
+      <SitySelector className="SitySelector" updateCity={updateCity} />
+     
+      {dataCity ? <CityCard city={dataCity}/> 
+      : 
+      <div className="pDataCity">
+        <p > город не выбран</p>
+        </div> }
     </div>
   );
 }

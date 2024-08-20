@@ -1,0 +1,38 @@
+.CardCity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80wh;
+    width: 80wh;
+    background-color: #b0ace1;
+    border-radius: 15px;
+    border: 2px solid #8e89c4;
+    margin: 20px;
+   
+}
+.CityFakts {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+margin: 20px;
+background-color: #b0ace1;
+}
+.cityName {
+    margin: 40px;
+    background-color: #b0ace1;
+    font-size: 25px;
+}
+.ulCity {
+list-style-type: none;
+margin-top: 20px;
+}
+.imageCity {
+    height: 200px;
+    width: 200px;
+}
+.liSelect {
+
+    background-color: #b0ace1;
+    width: 100%;
+}
